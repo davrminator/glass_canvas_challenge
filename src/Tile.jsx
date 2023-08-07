@@ -10,7 +10,7 @@ const Tile = observer(({type}) => {
 
     return (
         <div className="tile" style={{top: `calc(${y} * (${cellSize}vmin + ${cellGap}vmin) + ${cellGap}vmin)`, left: `calc(${x} * (${cellSize}vmin + ${cellGap}vmin) + ${cellGap}vmin)`}}>
-            {type === "target" ? <img style={{height: '90%', width:'90%'}} src='/public/target.svg'/> : <img style={{height: '90%', width:'90%', rotate:`${robotDirection}deg`, zIndex:2}} src='/public/direction.svg'/>}
+            {type === "target" ? <img style={{height: '90%', width:'90%'}} src='../public/target.svg'/> : <img style={{height: '90%', width:'90%', rotate:`${robotDirection}deg`, zIndex:2}} src='../public/direction.svg'/>}
         </div>
     )
 })
